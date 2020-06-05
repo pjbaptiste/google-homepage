@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header, nav{
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;  
+    margin: 0;
+    padding: 0;
+}
+.navigation div{
+    display: flex;
+    padding: 10px;
+
+    margin-left: 0;
+}
+.navigation li{
+    margin:0 10px;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+.navigation a:hover{
+    text-decoration: underline;
+    color:rgb(100, 96, 96);
+}
+.main-page{
+margin-top: 5%;
+}
+.main-page [type="search"],.div-svg{
+    display: block;
+    margin: 15px auto;
+    width: 600px;
+    height: 38px;
+    padding-left: 30px;
+    border-radius: 30px;
+    border: 1px solid #aaa;
+}
+.main-page [type="search"]:hover{
+    box-shadow: 0 0 3px gray;
+}
+.main-page img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#button-google{
+    display: flex;
+    justify-content: center;
+    
+}
+.button-search{
+    margin-right: 10px;
+    padding: 10px;
+    border-width: 0;
+    color: rgb(61, 60, 60);
+}
+.button-search:hover{
+    border:1 px solid gray;
+    box-shadow: 0 0 3px gray;
+}
+
+.main-page p{
+ text-align: center;
+}
+.footer-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%; 
+    margin-bottom: 0;
+    background-color: rgb(239,239,239);
+    border: 2px solid rgb(230, 230, 230);
+}
+
+.div-svg{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 165px;
+    padding: 0 10px;
+    border: none;
+}
+footer div {
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.icon-mic{
+    width: 25px;   
+}
+.icon-search{
+    width: 25px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width:700px) {
+    .footer-page{
+        margin-top:25%;
+        }
+}
+@media only screen and (min-width: 701px) and (max-width:1200px){
+    .footer-page{
+        margin-top:18%;        
+      }
+      
+}
